@@ -3,7 +3,7 @@ import './styles/index.scss'
 function App() {
   return (
     <div className="App">
-      <h1>Start Working</h1>
+      <h3>Lets start</h3>
     </div>
   );
 }
