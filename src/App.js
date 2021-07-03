@@ -1,9 +1,12 @@
 import './styles/index.scss'
-
+import ImageSlider from './components/imageSlider';
 function App() {
+  
   return (
     <div className="App">
-      <h1>Hello Im here</h1>
+      <div className='slider-container'>
+          <ImageSlider />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,119 @@
+$ArrowBtn-color : #000;
+
+.slider-container {
+    background: #B5EAEA;
+    padding: 20px;
+}
+
+.imageSlider-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: none;
+}
+.slider.active {
+    display: flex;
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.image {
+    max-width: 1000px;
+    width: 1000px;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+%arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: $ArrowBtn-color;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    z-index: 10;
+    cursor: pointer;
+}
+.right-arrow {
+    @extend %arrow;
+    right: 2rem;
+}
+
+.left-arrow {
+    @extend %arrow;
+    left: 2rem;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+
+    .dots {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #E8F6EF;
+        margin: 0 2px;
+        display: inline-block;
+        transition: background-color .5s ease;
+        cursor: pointer;
+    }
+
+    .dots.active {
+        background-color: #39A2DB;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:480px) {
+    .image {
+        width: 300px;
+        height: 40vh;
+    }
+    .right-arrow {
+        right: 0.7rem;
+    }
+    .left-arrow {
+        left: 0.7rem;
+    }
+}
+
+@media (min-width:481px) and (max-width:760px) {
+    .image {
+        width: 400px;
+        height: 40vh;
+    }
+    .right-arrow {
+        right: 0.7rem;
+    }
+    .left-arrow {
+        left: 0.7rem;
+    }
+}
+
+@media (min-width:761px) and (max-width:1024px) {
+    .image {
+        width: 700px;
+        height: 40vh;
+    }
+    .right-arrow {
+        right: 2rem;
+    }
+    .left-arrow {
+        left: 2rem;
+    }
+}
