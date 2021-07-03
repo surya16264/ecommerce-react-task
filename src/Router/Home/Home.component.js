@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
-
+import ImageSlider from '../../components/imageSlider';
 
 class Home extends Component {
     render() {
         return (
             <>
-               <h2>Home Page</h2>
+            <div className="App">
+                <div className='slider-container'>
+                    <ImageSlider />
+                </div>
+            </div>
             </>
         )
     }
