@@ -1,3 +1,5 @@
+@import "../../styles/mediaQuery.mixin.scss";
+
 nav {
   position: fixed;
   z-index: 10;
@@ -17,6 +19,12 @@ nav {
     align-items: center;
     font-size: 24px;
     color: #9f5f80;
+
+    @include for-phone-only {
+      float: none;
+      width: auto;
+      justify-content: center;
+    }
   }
 
   .links {
@@ -26,55 +34,10 @@ nav {
     width: 60%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 
-    li {
-      list-style: none;
-    }
-
-    a {
-      display: block;
-      padding: 1em;
-      font-size: 16px;
-      font-weight: bold;
-      color: #9f5f80;
-      text-decoration: none;
-    }
-  }
-}
-
-#nav-toggle {
-  position: absolute;
-  top: -100px;
-}
-
-nav .icon-burger {
-  display: none;
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-
-  .line {
-    width: 30px;
-    height: 5px;
-    background-color: #9f5f80;
-    margin: 5px;
-    border-radius: 3px;
-    transition: all 0.3s ease-in-out;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  nav {
-    .logo {
-      float: none;
-      width: auto;
-      justify-content: center;
-    }
-
-    .links {
+    @include for-phone-only {
       float: none;
       position: fixed;
       z-index: 9;
@@ -90,20 +53,56 @@ nav .icon-burger {
       overflow: hidden;
       box-sizing: border-box;
       transition: all 0.5s ease-in-out;
+    }
 
-      a {
+    li {
+      list-style: none;
+    }
+
+    a {
+      display: block;
+      padding: 1em;
+      font-size: 16px;
+      font-weight: bold;
+      color: #9f5f80;
+      text-decoration: none;
+
+      @include for-phone-only {
         font-size: 20px;
       }
     }
+  }
 
-    :checked ~ .links {
-      bottom: 0;
-    }
+  #nav-toggle {
+    position: absolute;
+    top: -100px;
+  }
 
-    .icon-burger {
+  .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include for-phone-only {
       display: block;
     }
 
+    .line {
+      width: 30px;
+      height: 5px;
+      background-color: #9f5f80;
+      margin: 5px;
+      border-radius: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  @include for-phone-only {
+    :checked ~ .links {
+      bottom: 0;
+    }
     :checked ~ .icon-burger .line {
       &:nth-child(1) {
         transform: translateY(10px) rotate(225deg);
@@ -119,3 +118,4 @@ nav .icon-burger {
     }
   }
 }
+
