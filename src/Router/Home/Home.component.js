@@ -11,7 +11,7 @@ class Home extends Component {
                     <ImageSlider />
                 </div>
                 <div className='cardsImg-container'>
-                    <h2>Trending Products</h2>
+                    <h1>Trending Products</h1>
                     <CardProducts />
                 </div>
             </div>
