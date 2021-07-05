@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Products extends Component {
     render() {
         return (
-            <h1>Product Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum quae aliquam atque quisquam odio possimus exercitationem aliquid explicabo sit?</p>
         )
     }
 }
