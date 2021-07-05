@@ -63,7 +63,7 @@ class ImageSlider extends Component {
                 {slider}
             </div>
             <div className='dots-container'>
-                <Dots sliderIndex={this.state.sliderIndex}/>
+                <Dots sliderIndex={this.state.sliderIndex } />
             </div>
             </>
         );

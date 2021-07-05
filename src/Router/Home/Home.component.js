@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ImageSlider from '../../components/imageSlider';
+import CardProducts from '../../components/CardProducts';
 
 class Home extends Component {
     render() {
@@ -8,6 +9,10 @@ class Home extends Component {
             <div className="App">
                 <div className='slider-container'>
                     <ImageSlider />
+                </div>
+                <div className='cardsImg-container'>
+                    <h2>Trending Products</h2>
+                    <CardProducts />
                 </div>
             </div>
             </>

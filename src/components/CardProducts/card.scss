@@ -1,0 +1,17 @@
+.cardsImg-container {
+    margin-top: 20px;
+}
+
+.cardsImg-container h2 {
+    text-align: center;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.cards {
+    text-align: center;
+}

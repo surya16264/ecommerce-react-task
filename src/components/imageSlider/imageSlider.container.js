@@ -9,7 +9,7 @@ class Dots extends Component {
     render() { 
         const { sliderIndex } = this.props
         const dots = imageData.map((dot, index) => {
-            return <span className={index === sliderIndex ? 'dots active' : 'dots'} ></span>
+            return <span className={index === sliderIndex ? 'dots active' : 'dots' } ></span>
         })
         return dots;
     }
