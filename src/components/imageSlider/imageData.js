@@ -1,11 +1,11 @@
 
 const imageData = [
     {
-        img_src : 'https://i.pinimg.com/originals/b4/6e/b7/b46eb746f7664083877a42aa05062dfe.jpg',
+        img_src : 'https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/SFH_Hero_PC_1x._CB666615856_.jpg',
         des : 'First post'
     },
     {
-        img_src : 'https://media.istockphoto.com/vectors/logistic-and-ecommerce-banner-vector-id1186032002',
+        img_src : 'https://images-eu.ssl-images-amazon.com/images/G/31/img20/CEPC/Wearables/Boat/Xtend/Reveal/7thJuly/Boat_Xtend_TallHero_1500x600._CB665621460_.jpg',
         des : 'Second post'
     },
     {

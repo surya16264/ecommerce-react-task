@@ -2,13 +2,12 @@ $ArrowBtn-color : #000;
 
 .slider-container {
     padding: 20px;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .imageSlider-container {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -31,8 +30,9 @@ $ArrowBtn-color : #000;
 }
 
 .image {
-    width: 1900px;
-    height: 65vh;
+    max-width: 100%;
+    height: 50vh;
+    display: block;
 }
 
 %arrow {
@@ -94,28 +94,28 @@ $ArrowBtn-color : #000;
     }
 }
 
-@media (min-width:481px) and (max-width:760px) {
-    .image {
-        width: 400px;
-        height: 40vh;
-    }
-    .right-arrow {
-        right: 0.7rem;
-    }
-    .left-arrow {
-        left: 0.7rem;
-    }
-}
+// @media (min-width:481px) and (max-width:760px) {
+//     .image {
+//         width: 400px;
+//         height: 40vh;
+//     }
+//     .right-arrow {
+//         right: 0.7rem;
+//     }
+//     .left-arrow {
+//         left: 0.7rem;
+//     }
+// }
 
-@media (min-width:761px) and (max-width:1024px) {
-    .image {
-        width: 700px;
-        height: 40vh;
-    }
-    .right-arrow {
-        right: 2rem;
-    }
-    .left-arrow {
-        left: 2rem;
-    }
-}
+// @media (min-width:761px) and (max-width:1024px) {
+//     .image {
+//         width: 700px;
+//         height: 40vh;
+//     }
+//     .right-arrow {
+//         right: 2rem;
+//     }
+//     .left-arrow {
+//         left: 2rem;
+//     }
+// }
