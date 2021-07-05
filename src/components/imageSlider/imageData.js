@@ -5,7 +5,7 @@ const imageData = [
         des : 'First post'
     },
     {
-        img_src : 'https://media.istockphoto.com/vectors/logistic-and-ecommerce-banner-vector-id1186032002',
+        img_src : 'https://lda.lowes.com/is/image/Lowes//appliances-special-values-dp18-316212-mow-v4?scl=1&fmt=webp',
         des : 'Second post'
     },
     {
