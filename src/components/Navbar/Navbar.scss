@@ -9,7 +9,7 @@ nav {
   font-family: "Montserrat", sans-serif;
   padding: 0 2%;
   height: 80px;
-  background-color: #deedf0;
+  background-color: #0b2b69;
 
   .logo {
     float: left;
@@ -18,7 +18,7 @@ nav {
     display: flex;
     align-items: center;
     font-size: 24px;
-    color: #9f5f80;
+    color: #ffffff;
 
     @include for-phone-only {
       float: none;
@@ -64,7 +64,7 @@ nav {
       padding: 1em;
       font-size: 16px;
       font-weight: bold;
-      color: #9f5f80;
+      color: #ffffff;
       text-decoration: none;
 
       @include for-phone-only {
@@ -92,7 +92,7 @@ nav {
     .line {
       width: 30px;
       height: 5px;
-      background-color: #9f5f80;
+      background-color: #ffffff;
       margin: 5px;
       border-radius: 3px;
       transition: all 0.3s ease-in-out;
