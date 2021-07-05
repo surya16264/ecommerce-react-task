@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import imageData from './imageData';
-import {IoArrowForward, IoArrowBack} from "react-icons/io5";
+import {BiChevronLeft, BiChevronRight} from "react-icons/bi";
 import Dots from './imageSlider.container';
 import './imageSlider.scss'
 
@@ -58,12 +58,12 @@ class ImageSlider extends Component {
         return(
             <>
             <div className='imageSlider-container'>
-                <IoArrowBack className='left-arrow' onClick={() => this.prevSlide()}/>
-                <IoArrowForward className='right-arrow' onClick={() => this.nextSlide()}/>
+                <BiChevronLeft className='left-arrow' onClick={() => this.prevSlide()}/>
+                <BiChevronRight className='right-arrow' onClick={() => this.nextSlide()}/>
                 {slider}
             </div>
             <div className='dots-container'>
-                <Dots sliderIndex={this.state.sliderIndex}/>
+                <Dots sliderIndex={this.state.sliderIndex } />
             </div>
             </>
         );

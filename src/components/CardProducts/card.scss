@@ -1,0 +1,36 @@
+.cardsImg-container {
+    margin-top: 20px;
+}
+
+.cardsImg-container h1 {
+    text-align: center;
+    color: #a16283;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.cards {
+    text-align: center;
+    padding: 10px;
+
+    p {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:610px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:611px) and (max-width:900px) {
+    .cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
