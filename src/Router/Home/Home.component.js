@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ImageSlider from '../../components/imageSlider';
 import CardProducts from '../../components/CardProducts';
+import TrendingProducts from '../../components/CardProducts/card.container'
 
 class Home extends Component {
     render() {
@@ -12,7 +13,7 @@ class Home extends Component {
                 </div>
                 <div className='cardsImg-container'>
                     <h1>Trending Products</h1>
-                    <CardProducts />
+                    <TrendingProducts />
                 </div>
             </div>
             </>

@@ -9,6 +9,7 @@ class AppRouter extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/products" component={Products} />
+              <Route>404 Error found</Route>
             </Switch>
         );
       }

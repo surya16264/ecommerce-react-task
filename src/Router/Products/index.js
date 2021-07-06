@@ -1,1 +1,1 @@
-export {default} from './Product.components'
+export {default} from './ProductCardDesign.container'

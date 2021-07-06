@@ -1,0 +1,120 @@
+$Content-color : #000000;
+
+.plp-page {
+    margin-top: 6rem;
+
+    h1 {
+        text-align: center;
+        color: #0c2b69;
+    }
+}
+
+.productCard-container {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    row-gap: 3rem;
+    column-gap: 3rem;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCard {
+    padding: 15px;
+    border-radius: 10px;
+    width: 20rem;
+
+    &:hover {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0,0.5);
+        
+    }
+    .heartIcon {
+        text-align: right;
+        font-size: 1.3rem;
+        color: $Content-color;
+        cursor: pointer;
+    }
+
+    img.productImage {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        width: 100%;
+        height: 35vh;
+    }
+
+    .productDescription a {
+        text-decoration: none;
+        color: #676464;
+    
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+    }
+
+    .productPrice {
+        margin-bottom: 1rem;
+        color: $Content-color;
+        p {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+    }
+    
+    .buynow {
+        text-align: right;
+    
+        .buynowbtn {
+            border: 1px solid $Content-color;
+            background: none;
+            font-family: sans-serif;
+            font-size: 1rem;
+            padding: 7px;
+            border-radius: 20px;
+            color: $Content-color;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .productCard-container {
+        grid-template-columns: 1fr ;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width:501px) and (max-width:750px) {
+    .productCard-container {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+    }
+    .productCard {
+        width: 15rem;
+    }
+}
+
+@media (min-width:751px) and (max-width:1024px) {
+    .productCard-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+    .productCard {
+        width: 15rem;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1490px) {
+    .productCard-container {
+        column-gap: 1rem;
+    }
+    .productCard {
+        width: 15rem;
+    }
+}
+
+
+
+
+

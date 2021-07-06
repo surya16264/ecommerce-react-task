@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import cardData from './cardData';
 import './card.scss'
+
 class CardProducts extends Component {
-    
+    constructor(props) {
+        super(props)
+    }
     render() { 
-        const cards = cardData.map((card, index) => {
+        const { cardsData } = this.props 
+        const cards = cardsData.map((card, index) => {
             return(
                 <div className='cards' key={index}>
                     <img src={card.img_src} alt='' className='cardImg'/>
@@ -13,11 +16,35 @@ class CardProducts extends Component {
             );
         });
         return(
-            <div className='cards-container'>
-                {cards}
-            </div>
+            cards
         );
     }
 }
  
 export default CardProducts;
+
+
+
+
+
+
+
+
+
+
+// const CardProducts = () => {
+//     const products = useSelector((state) => state.allProducts.products);
+//     const {id, img_src, des} = products;
+//     const cards = products.map((card, index) => {
+//         console.log(card)
+//         return(
+//             // <div className='cards' key={index}>
+//             //     <img src={img_src} alt='' className='cardImg'/>
+//             //     <p>{des}</p>
+//             // </div>
+//             <div><h1>Products rendered</h1></div>
+//         );
+//     });
+// }
+
+// export default CardProducts;
