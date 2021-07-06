@@ -10,7 +10,7 @@ class ProductCardComponent extends Component {
                 <div className='productCard' key={index}>
                     <div className='heartIcon'> <span> <FaRegHeart/> </span> </div>
                     <img src={card.img_src} className='productImage' alt=''/>
-                    <div className='productDescription'> <a href='#'> <p>{card.des1}</p> </a> </div>
+                    <div className='productDescription'> <a href='#'> <p>{card.des}</p> </a> </div>
                     <div className='productPrice'> 
                         <p> 
                             <span>$</span> {card.min_price} 
