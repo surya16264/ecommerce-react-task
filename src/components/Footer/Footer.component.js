@@ -24,7 +24,7 @@ class Footer extends Component {
                     <h5>Contact us</h5>
                      <p><span><BiMap /></span> Fashion Outlets HeadQueater,BTM LAYOUT, Bangaluru ,India , 560029</p>
                     <strong><span><BiPhoneCall/></span> +91-9876543210 </strong> <br/>
-                    <strong><span><BiMailSend /></span>help@fashionoutlets.com</strong>
+                    <strong><span><BiMailSend /></span> help@fashionoutlets.com</strong>
                 </div>
             </div>
         )
