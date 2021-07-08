@@ -9,7 +9,6 @@ class TrendingProducts extends Component {
         this.state = {
             cardsData : this.props.cardsData.Cards.cards
         }
-        this.props.setCardsdata();
     }
     render() {
         return (  
