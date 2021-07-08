@@ -9,17 +9,16 @@ class ProductCardComponent extends Component {
     }
     render() { 
         const { productsData } = this.props
-        const cards = ProductCardData.map((card, index) => {
+        console.log("Component", productsData)
+        const cards = productsData.map((card, index) => {
             return(
                 <div className='productCard' key={index}>
                     <div className='heartIcon'> <span> <FaRegHeart/> </span> </div>
-                    <img src={card.img_src} className='productImage' alt=''/>
-                    <div className='productDescription'> <a href='#'> <p>{card.des}</p> </a> </div>
+                    <img src={card.image} className='productImage' alt=''/>
+                    <div className='productDescription'> <a href='#'> <p>{card.category}</p> </a> </div>
                     <div className='productPrice'> 
                         <p> 
-                            <span>$</span> {card.min_price} 
-                            <span> - </span>
-                            <span>$</span> {card.max_price} 
+                            <span>$</span> {card.price}  
                         </p> 
                     </div>
                     <div className='buynow'> <button className='buynowbtn'>BUY NOW</button> </div>

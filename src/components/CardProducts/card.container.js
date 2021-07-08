@@ -7,8 +7,9 @@ class TrendingProducts extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            cardsData : this.props.cardsData.Cards
+            cardsData : this.props.cardsData.Cards.cards
         }
+        this.props.setCardsdata();
     }
     render() {
         return (  
@@ -19,15 +20,23 @@ class TrendingProducts extends Component {
     }    
 }
 
-const stateToProps = (state) => {
-    return {
+/**
+ * 
+ * @param {*} state 
+ * @returns 
+ */
+const stateToProps = (state) => ({
         cardsData : state
-    }
-}
+});
 
+/**
+ * 
+ * @param {*} dispatch 
+ * @returns 
+ */
 const matchDispacthToProps = (dispatch) => ({
     setCardsdata : () => CardListDispatcher.dispatchCardList(dispatch)
-})
+});
 
    
 export default connect(stateToProps, matchDispacthToProps)(TrendingProducts);

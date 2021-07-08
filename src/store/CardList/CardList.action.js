@@ -1,8 +1,11 @@
 export const SET_CARDS = 'SET_CARDS'
 
-export const setCards = (products) => ({
+/**
+ * 
+ * @returns 
+ */
+export const setCards = () => ({
     type : SET_CARDS,
-    payload : products,
 });
 
 

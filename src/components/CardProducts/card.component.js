@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import './card.scss'
 
-class CardProducts extends Component {
+export class CardProducts extends Component {
     constructor(props) {
         super(props)
     }
     render() { 
         const { cardsData } = this.props 
+        console.log(cardsData)
         const cards = cardsData.map((card, index) => {
             return(
                 <div className='cards' key={index}>

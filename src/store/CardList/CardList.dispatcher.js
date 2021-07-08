@@ -1,8 +1,10 @@
 import { setCards } from "./CardList.action"
 
+/**
+ * Dispatcher method 
+ */
 export class CardListDispatcher {
     dispatchCardList(dispatch) {
-        debugger
        dispatch(setCards())
     }
 }

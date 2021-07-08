@@ -9,25 +9,36 @@ import './ProductCardDesign.scss'
 class ProductsCardContainer extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            ProductsData : this.props.ProductsData.Products
-        }
-        debugger
         this.props.setProductsdata()
     }
+
+    componentDidUpdate(prevState, prevProps) {
+        console.log("Container", this.props)
+    }
+
     render() {
         return(
            <>
-           <ProductCardComponent productsData = {this.props.ProductsData}/>
+           <ProductCardComponent productsData = {this.props.ProductsData.Products.products}/>
            </>
         );
     }
 }
 
+/**
+ * 
+ * @param {*} state 
+ * @returns 
+ */
 export const stateToProps = (state) => ({
     ProductsData : state
 })
 
+/**
+ * 
+ * @param {*} dispatch 
+ * @returns 
+ */
 export const matchDispatchToProps = (dispatch) => ({
      setProductsdata : () => ProductListDispatcher.dispatchProductList(dispatch)
 })

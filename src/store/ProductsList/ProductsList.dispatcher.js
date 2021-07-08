@@ -1,6 +1,8 @@
 import { setProducts } from "./ProductsList.action"
 
-
+/**
+ * Dispatcher method
+ */
 export class ProductListDispatcher {
     dispatchProductList(dispatch) {
         fetch("https://fakestoreapi.com/products")
