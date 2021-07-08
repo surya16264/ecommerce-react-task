@@ -4,7 +4,11 @@ import {FaRegHeart} from 'react-icons/fa';
 import './ProductCardDesign.scss'
 
 class ProductCardComponent extends Component {
+    constructor(props) {
+        super(props)
+    }
     render() { 
+        const { productsData } = this.props
         const cards = ProductCardData.map((card, index) => {
             return(
                 <div className='productCard' key={index}>
@@ -22,7 +26,14 @@ class ProductCardComponent extends Component {
                 </div>
             )
         });
-        return cards
+        return(
+            <div className='plp-page'>
+            <h1>Product Listing Page</h1>
+            <div className='productCard-container'>
+                {cards}
+            </div>
+            </div>
+        );
     }
 }
  

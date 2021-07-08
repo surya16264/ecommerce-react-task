@@ -1,13 +1,16 @@
-import { ActionTypes } from "./ProductsList.dispatcher";
-
+import { SET_PRODUCTS } from ".";
 const initialState = {
-    products : []
+    products : [],
+    isLoad : false
 }
 export const productsReducer = (state = initialState.products, {type, payload}) => {
+    console.log("Reducer", payload)
     switch(type) {
-        case ActionTypes.SET_PRODUCTS:
+        case SET_PRODUCTS:
             return {...state, products : payload};
         default:
             return state;
     }
 }
+
+export default productsReducer

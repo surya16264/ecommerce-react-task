@@ -1,4 +1,4 @@
-import { ActionTypes } from "./CardList.dispatcher";
+import { SET_CARDS }  from "./CardList.action";
 
 const initialState = {
     cards : [
@@ -34,11 +34,14 @@ const initialState = {
         }
     ]
 }
+
 export const cardsReducer = (state = initialState.cards, action) => {
     switch(action.type) {
-        case ActionTypes.SET_CARDS:
+        case SET_CARDS:
             return state;
         default:
             return state;
     }
 }
+
+export default cardsReducer

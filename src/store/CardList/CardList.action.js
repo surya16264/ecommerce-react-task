@@ -1,9 +1,8 @@
-import { ActionTypes } from "./CardList.dispatcher";
+export const SET_CARDS = 'SET_CARDS'
 
-export const setCards = (products) => {
-    return{
-        type : ActionTypes.SET_CARDS,
-        payload : products,
-    };
-};
+export const setCards = (products) => ({
+    type : SET_CARDS,
+    payload : products,
+});
+
 

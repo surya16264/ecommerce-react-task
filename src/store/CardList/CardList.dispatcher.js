@@ -1,3 +1,10 @@
-export const ActionTypes = {
-    SET_CARDS : 'SET_CARDS',
+import { setCards } from "./CardList.action"
+
+export class CardListDispatcher {
+    dispatchCardList(dispatch) {
+        debugger
+       dispatch(setCards())
+    }
 }
+
+export default new CardListDispatcher() 

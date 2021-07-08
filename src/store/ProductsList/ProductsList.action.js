@@ -1,8 +1,11 @@
-import { ActionTypes } from "./ProductsList.dispatcher";
+export const SET_PRODUCTS = 'SET_PRODUCTS';
+
 
 export const setProducts = (products) => {
+    console.log(products)
     return{
-        type : ActionTypes.SET_PRODUCTS,
+        type : SET_PRODUCTS,
         payload : products,
     };
 };
+

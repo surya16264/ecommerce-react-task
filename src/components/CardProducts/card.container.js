@@ -1,7 +1,7 @@
 import React, { Component }from 'react';
 import { connect } from 'react-redux';
 import CardProducts from ".";
-import { setCards } from '../../store/CardList/CardList.action';
+import { CardListDispatcher } from '../../store/CardList';
 
 class TrendingProducts extends Component {
     constructor(props) {
@@ -25,11 +25,9 @@ const stateToProps = (state) => {
     }
 }
 
-const matchDispacthToProps = (dispatch) => {
-    return {
-        setProductsdata : () => dispatch(setCards)
-    }
-}
+const matchDispacthToProps = (dispatch) => ({
+    setCardsdata : () => CardListDispatcher.dispatchCardList(dispatch)
+})
 
- 
+   
 export default connect(stateToProps, matchDispacthToProps)(TrendingProducts);
