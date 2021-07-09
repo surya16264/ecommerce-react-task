@@ -42,7 +42,6 @@ const initialState = {
  * @returns state
  */
 export const cardsReducer = (state = initialState, action) => {
-    console.log(state)
     switch(action.type) {
         case SET_CARDS:
             return state;

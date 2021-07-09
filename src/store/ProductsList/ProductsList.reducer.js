@@ -10,7 +10,7 @@ const initialState = {
  * @returns state
  */
 export const productsReducer = (state = initialState.products, {type, payload}) => {
-    console.log("Reducer", payload)
+    console.log(state, payload)
     switch(type) {
         case SET_PRODUCTS:
             return {...state, products : payload};

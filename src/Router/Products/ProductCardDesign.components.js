@@ -10,7 +10,7 @@ class ProductCardComponent extends Component {
     render() { 
         const { productsData } = this.props
         console.log("Component", productsData)
-        const cards = productsData.map((card, index) => {
+        const cards = productsData.products.map((card, index) => {
             return(
                 <div className='productCard' key={index}>
                     <div className='heartIcon'> <span> <FaRegHeart/> </span> </div>
